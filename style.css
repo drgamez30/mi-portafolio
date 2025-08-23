@@ -1,27 +1,31 @@
+/* Estilos generales de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Fuente de texto */
+    background-color: #f5f5f5;      /* Color de fondo */
+    color: #333;                    /* Color del texto */
+    margin: 0;                      /* Quitar márgenes por defecto */
+    padding: 0;                     /* Quitar padding por defecto */
 }
 
+/* Estilo del encabezado */
 header {
-    background-color: #6b4f4f;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    background-color: #6b4f4f;      /* Fondo marrón */
+    color: #fff;                    /* Texto en blanco */
+    padding: 20px;                  /* Espaciado interno */
+    text-align: center;             /* Centrar el texto */
 }
 
+/* Estilo de las secciones del contenido */
 section {
-    padding: 20px;
-    margin: 10px auto;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;                  /* Espaciado interno */
+    margin: 10px auto;              /* Margen automático para centrar */
+    max-width: 800px;               /* Ancho máximo de la sección */
+    background-color: #fff;         /* Fondo blanco */
+    border-radius: 8px;             /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
 }
 
+/* Estilo para los títulos */
 h1, h2 {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 0;             /* Margen inferior para separar */
 }
