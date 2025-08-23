@@ -1,15 +1,20 @@
-# Mi Portafolio Web
+# Mi Portafolio
 
-Este es un proyecto personal de portafolio web creado con **HTML y CSS**.  
-El objetivo es mostrar mis conocimientos básicos en desarrollo web, manejo de ramas en Git y publicación en GitHub Pages.
+Este es un portafolio personal desarrollado en **HTML y CSS**, con un diseño sencillo, limpio y adaptable a distintos dispositivos. El objetivo es mostrar mis habilidades, proyectos y experiencia.
 
 ---
 
 ## 🚀 Tecnologías utilizadas
-- **HTML5**
-- **CSS3**
-- **Git / GitHub**
+- **HTML5** para la estructura semántica.
+- **CSS3** para estilos y diseño responsivo.
+- **Git y GitHub** para control de versiones y despliegue.
 
 ---
 
-## 📂 Estructura del proyecto
+## 🌍 Portafolio en línea
+👉 [Ver portafolio aquí](https://drgamez30.github.io/mi-portafolio/)
+
+---
+
+## 📌 Autor
+Desarrollado por **Darwins Rhosneiber Gamez Pérez**
