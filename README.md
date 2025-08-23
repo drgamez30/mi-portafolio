@@ -5,8 +5,8 @@ Este es un portafolio personal desarrollado en **HTML y CSS**, con un diseño se
 ---
 
 ## 🚀 Tecnologías utilizadas
-- **HTML5** para la estructura semántica.
-- **CSS3** para estilos y diseño responsivo.
+- **HTML** para la estructura.
+- **CSS** para estilos y diseño.
 - **Git y GitHub** para control de versiones y despliegue.
 
 ---
