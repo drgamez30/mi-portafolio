@@ -104,7 +104,66 @@ h1, h2 {
    Linea decorativa en secciones"
    ============================= */
 
-#contacto, #sobre-mi , #proyectos {
+#contacto, #sobre-mi , #proyectos, #habilidades {
     border-left: 5px solid #6b4f4f; /* Línea vertical marrón a la izquierda para destacar la sección */
     padding-left: 15px;             /* Espacio entre la línea y el contenido */
+}
+
+/* =============================
+   Sección Habilidades
+   ============================= */
+
+/* Contenedor individual de cada habilidad */
+.habilidad {
+    display: flex;              /* Coloca todos los elementos de la habilidad en columna */
+    flex-direction: column;     /* La fila con nombre y barra arriba, descripción debajo */
+    margin-bottom: 25px;        /* Espacio inferior entre habilidades */
+}
+
+/* Fila que contiene nombre de la habilidad y barra de cuadros */
+.fila {
+    display: flex;              /* Coloca nombre y barra en línea horizontal */
+    align-items: center;        /* Alinea verticalmente los elementos al centro de la fila */
+    width: 40%;                /* Ocupa todo el ancho disponible */
+}
+
+/* Columna que contiene el nombre de la habilidad */
+.col.nombre {
+    font-weight: bold;          /* Hace que el nombre sea más visible */
+    font-size: 1.1rem;          /* Tamaño ligeramente mayor que el texto normal */
+    text-align: left;           /* Alinea el nombre a la izquierda de su columna */
+    flex: 1;                    /* Ocupa proporcionalmente espacio disponible */
+}
+
+/* Columna que contiene la barra de cuadros */
+.col.barra {
+    display: flex;              /* Coloca los cuadros en línea horizontal */
+    gap: 5px;                   /* Espacio entre cada cuadro */
+    margin-left: auto;           /* Empuja la barra hacia la mitad de la sección */
+}
+
+/* Cuadritos activos que indican nivel alcanzado */
+.cuadro.activo {
+    width: 20px;                 /* Ancho de cada cuadro */
+    height: 20px;                /* Alto de cada cuadro */
+    background-color: #6b4f4f;   /* Color activo que combina con el diseño general */
+    border-radius: 4px;          /* Bordes ligeramente redondeados para suavizar la forma */
+    transition: background-color 0.3s; /* Transición suave para cambios de color */
+}
+
+/* Cuadritos vacíos que representan niveles no alcanzados */
+.cuadro {
+    width: 20px;                 /* Ancho de cada cuadro */
+    height: 20px;                /* Alto de cada cuadro */
+    background-color: #ccc;      /* Color gris para indicar nivel vacío */
+    border-radius: 4px;          /* Bordes redondeados para consistencia visual */
+}
+
+/* Texto descriptivo debajo de la fila de habilidad */
+.descripcion {
+    font-size: 0.95rem;          /* Tamaño ligeramente menor para el texto de explicación */
+    color: #555;                 /* Color gris oscuro para buena legibilidad */
+    line-height: 1.4;            /* Espaciado entre líneas para mejorar lectura */
+    margin: 5px 0 0 0;           /* Separación superior respecto a la fila de habilidad */
+    width: 100%;                 /* Ocupa todo el ancho disponible debajo de la fila */
 }
