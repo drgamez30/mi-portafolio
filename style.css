@@ -113,57 +113,57 @@ h1, h2 {
    Sección Habilidades
    ============================= */
 
-/* Contenedor individual de cada habilidad */
-.habilidad {
-    display: flex;              /* Coloca todos los elementos de la habilidad en columna */
-    flex-direction: column;     /* La fila con nombre y barra arriba, descripción debajo */
-    margin-bottom: 25px;        /* Espacio inferior entre habilidades */
+/* Contenedor de cada bloque de habilidad */
+.habilidad-bloque {
+    margin-bottom: 25px;         /* Espacio entre bloques */
 }
 
-/* Fila que contiene nombre de la habilidad y barra de cuadros */
-.fila {
-    display: flex;              /* Coloca nombre y barra en línea horizontal */
-    align-items: center;        /* Alinea verticalmente los elementos al centro de la fila */
-    width: 40%;                /* Ocupa todo el ancho disponible */
+/* Fila de nombre y barra */
+.habilidad-row {
+    display: flex;               /* Coloca nombre y barra en línea horizontal */
+    flex-wrap: wrap;             /* Permite que bajen si no caben horizontalmente */
+    align-items: center;         /* Centra verticalmente los elementos */
 }
 
-/* Columna que contiene el nombre de la habilidad */
-.col.nombre {
-    font-weight: bold;          /* Hace que el nombre sea más visible */
-    font-size: 1.1rem;          /* Tamaño ligeramente mayor que el texto normal */
-    text-align: left;           /* Alinea el nombre a la izquierda de su columna */
-    flex: 1;                    /* Ocupa proporcionalmente espacio disponible */
+/* Nombre de la habilidad */
+.habilidad-nombre {
+    flex: 0 0 20%;                     /* Ocupa proporcionalmente el espacio disponible */
+    min-width: 120px;            /* No se haga demasiado pequeño */
+    font-weight: bold;            /* Resalta el nombre */
+    font-size: 1.1rem;           /* Tamaño ligeramente mayor que el texto normal */
+    text-align: left;            /* Alineación a la izquierda */
 }
 
-/* Columna que contiene la barra de cuadros */
-.col.barra {
-    display: flex;              /* Coloca los cuadros en línea horizontal */
-    gap: 5px;                   /* Espacio entre cada cuadro */
-    margin-left: auto;           /* Empuja la barra hacia la mitad de la sección */
+/* Contenedor de los cuadritos */
+.habilidad-barra {
+    flex: 1;                     /* Ocupa proporcionalmente el espacio restante */
+    display: flex;               /* Coloca los cuadros en fila */
+    gap: 5px;                    /* Espacio entre cuadros */
+    justify-content: flex-start; /* Alinea los cuadros a la izquierda */
 }
 
-/* Cuadritos activos que indican nivel alcanzado */
+/* Cuadritos activos */
 .cuadro.activo {
-    width: 20px;                 /* Ancho de cada cuadro */
-    height: 20px;                /* Alto de cada cuadro */
-    background-color: #6b4f4f;   /* Color activo que combina con el diseño general */
-    border-radius: 4px;          /* Bordes ligeramente redondeados para suavizar la forma */
-    transition: background-color 0.3s; /* Transición suave para cambios de color */
+    width: 20px;                  /* Ancho */
+    height: 20px;                 /* Alto */
+    background-color: #6b4f4f;   /* Color marrón activo */
+    border-radius: 4px;           /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave */
 }
 
-/* Cuadritos vacíos que representan niveles no alcanzados */
+/* Cuadritos vacíos */
 .cuadro {
-    width: 20px;                 /* Ancho de cada cuadro */
-    height: 20px;                /* Alto de cada cuadro */
-    background-color: #ccc;      /* Color gris para indicar nivel vacío */
-    border-radius: 4px;          /* Bordes redondeados para consistencia visual */
+    width: 20px;                  /* Ancho */
+    height: 20px;                 /* Alto */
+    background-color: #ccc;       /* Color gris */
+    border-radius: 4px;           /* Bordes redondeados */
 }
 
-/* Texto descriptivo debajo de la fila de habilidad */
+/* Texto descriptivo debajo de la barra */
 .descripcion {
-    font-size: 0.95rem;          /* Tamaño ligeramente menor para el texto de explicación */
-    color: #555;                 /* Color gris oscuro para buena legibilidad */
-    line-height: 1.4;            /* Espaciado entre líneas para mejorar lectura */
-    margin: 5px 0 0 0;           /* Separación superior respecto a la fila de habilidad */
-    width: 100%;                 /* Ocupa todo el ancho disponible debajo de la fila */
+    font-size: 0.95rem;           /* Tamaño ligeramente menor */
+    color: #555;                  /* Gris oscuro */
+    line-height: 1.4;             /* Espaciado entre líneas */
+    margin: 5px 0 0 0;            /* Espacio superior respecto a la barra */
+    width: 100%;                  /* Ocupa todo el ancho debajo */
 }
