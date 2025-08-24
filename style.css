@@ -12,33 +12,35 @@ body {
 /* =============================
    Estilo del encabezado
    ============================= */
+
 header {
-    background-color: #6b4f4f;      /* Fondo marrón */
-    color: #fff;                    /* Texto en blanco */
-    padding: 40px 20px;                /* Espaciado interno */
-    text-align: center;             /* Centrar el texto */
+    background-color: #6b4f4f;  /* Establece el fondo marrón para todo el header */
+    color: #fff;                /* Color del texto en blanco para contraste */
+    padding: 40px 20px;         /* Espacio interno: 40px arriba/abajo, 20px izquierda/derecha */
+    text-align: center;         /* Centra horizontalmente todo el contenido dentro del header */
 }
 
 /* Línea decorativa debajo del título */
 header::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #ffa500; /* Color que resalta */
-    margin: 15px auto 0;
-    border-radius: 2px;
+    content: "";                /* Necesario para generar contenido decorativo vacío */
+    display: block;             /* Se comporta como un bloque para poder darle ancho y alto */
+    width: 60px;                /* Ancho de la línea decorativa */
+    height: 3px;                /* Altura de la línea decorativa */
+    background-color: #ffa500;  /* Color naranja que resalta sobre el fondo marrón */
+    margin: 15px auto 0;        /* Margen superior de 15px y centrado horizontal con auto */
+    border-radius: 2px;         /* Bordes ligeramente redondeados para suavidad visual */
 }
 
 header h1 {
-    font-size: 2.5rem;               /* Tamaño del título principal */
-    margin-bottom: 10px;            /* Separación inferior */
+    font-size: 2.5rem;          /* Tamaño del título principal grande y destacado */
+    margin-bottom: 10px;        /* Separación inferior respecto al párrafo */
 }
 
 header p {
-    font-size: 1.1rem;              /* Tamaño del subtítulo */
-    color: #f0e6e6;                /* Subtítulo con color más suave */
+    font-size: 1.1rem;          /* Tamaño del subtítulo ligeramente más pequeño que el título */
+    color: #f0e6e6;             /* Color del subtítulo más suave para no competir con el título */
 }
+
 
 /* =============================
    Estilo de las secciones del contenido
@@ -55,6 +57,79 @@ section {
 h1, h2 {
     margin: 0 0 15px 0;             /* Margen inferior para separar */
 }
+
+/* =============================
+   Título de la sección Sobre mí
+   ============================= */
+#sobre-mi h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #6b4f4f;
+    margin-bottom: 25px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Contenedor de texto e imagen */
+.sobre-mi-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;      /* Alinea al inicio verticalmente */
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;          /* Bordes redondeados del container */
+    box-sizing: border-box;
+}
+
+/* Columna de texto */
+.sobre-mi-texto {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;                    /* Separación entre datos */
+}
+
+/* Cada dato dentro del texto con caja */
+.dato {
+    background-color: #f9f9f9;    /* Caja clara */
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Mini-título de cada dato */
+.mini-titulo {
+    font-weight: bold;
+    color: #6b4f4f;
+    width: 140px;
+    flex-shrink: 0;              /* Evita que se achique */
+}
+
+/* Valor de cada dato */
+.valor {
+    color: #333;
+    flex: 1;
+}
+
+/* Columna de imagen */
+.sobre-mi-imagen {
+    flex: 0 0 50%;
+    text-align: center;
+}
+
+/* Estilo de la imagen */
+.sobre-mi-imagen img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 
 /* =============================
    Sección de proyectos (tarjetas)
