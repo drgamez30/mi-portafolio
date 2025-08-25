@@ -242,3 +242,33 @@ h1, h2 {
     margin: 5px 0 0 0;            /* Espacio superior respecto a la barra */
     width: 100%;                  /* Ocupa todo el ancho debajo */
 }
+
+
+/* =============================
+   Ajustes responsive
+   ============================= */
+
+/* En pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+  .sobre-mi-container {
+    flex-direction: column;  /* Coloca texto arriba e imagen abajo */
+    align-items: center;     /* Centra todo */
+    padding: 15px;
+  }
+
+  .sobre-mi-texto,
+  .sobre-mi-imagen {
+    flex: 0 0 100%;          /* Que ocupen todo el ancho */
+    max-width: 100%;         /* Evita desbordes */
+  }
+
+  .sobre-mi-imagen img {
+    max-width: 150px;        /* Foto más pequeña en móvil */
+    height: auto;
+  }
+
+  .dato {
+    font-size: 0.95rem;      /* Texto un poco más compacto */
+    padding: 8px 12px;
+  }
+}
